@@ -57,11 +57,13 @@ print(f"The new balance is:{new_balance}")
 #print(f"The new balance is:",new_balance)
 
 
-#Assignment
+#Assignment1
 
 Qn= "CONFIRMED you have received 40KES from Philip"
 split=Qn.split( )  
 print(f"The amount received is:",split[4] )
+
+#Assignment2
 
 clean_balance1=split[4].replace("KES","")
 print(clean_balance1)
