@@ -16,7 +16,7 @@ sentence_2="Mathematics Physics"
 split=sentence_2.split(" ")
 
 print(f"The first subject is",split[0])
-
+print(f"The second subject is",split[1])
 
 #Make everything CAPS
 mpesa_code="ub12ddsfhg"
@@ -53,22 +53,23 @@ print("Cleaned amount added:",cleaned_amount_added)
 new_balance=int(cleaned_balance)+int(cleaned_amount_added)
 
 print(f"The new balance is:{new_balance}")
-print("The new balance is:",new_balance)
-print(f"The new balance is:",new_balance)
+#print("The new balance is:",new_balance)
+#print(f"The new balance is:",new_balance)
 
 
 #Assignment
 
 Qn= "CONFIRMED you have received 40KES from Philip"
-split=Qn.split( )
+split=Qn.split( )  
 print(f"The amount received is:",split[4] )
 
-clean_balance=split[4].replace("KES","")
-print(clean_balance)
+clean_balance1=split[4].replace("KES","")
+print(clean_balance1)
 
-new_mpesa_balancee=int(clean_balance)+int(new_balance)
+new_mpesa_balance=int(clean_balance1)+int(new_balance)
 end=("KES")
-print(new_mpesa_balancee)
-print(f"{new_mpesa_balancee}{end}")
+print(new_mpesa_balance)
+print(f"{new_mpesa_balance}{end}")
 
-print(f"CONFIRMED you have received 40KES from Philip.Your new mpesa balance is {new_mpesa_balancee}{end} ")
+print(f"CONFIRMED you have received 40KES from Philip.Your new mpesa balance is {new_mpesa_balance}{end} ")
+
