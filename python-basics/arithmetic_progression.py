@@ -5,8 +5,8 @@
 #Calculating nth term
 
 a=int(input("Enter the first number:"))
-n=int(input("Enter the number of terms"))
-d=int(input("Enter the common difference"))
+n=int(input("Enter the number of terms:"))
+d=int(input("Enter the common difference:"))
 
 nth_term=a+(n-1)*d
 print(f"The nth term is:{nth_term}")
