@@ -11,6 +11,8 @@ d=int(input("Enter the common difference:"))
 nth_term=a+(n-1)*d
 print(f"The nth term is:{nth_term}")
 
+#Caluclating the sum of an arithmetic progression
+
 Sn=(n*(2*a+(n-1)*d))/2
 #Sn=(n/2)*((2*a)+(n-1)*d)
 print(f"The sum of the numbers is:{Sn}")
