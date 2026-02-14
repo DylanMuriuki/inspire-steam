@@ -3,6 +3,7 @@
 #Program to calculate geometric progression
 
 #Calculating the nth term
+#Inputs are integers only
 
 a=int(input("Enter the first number:"))
 r=int(input("Enter the common ratio:"))
