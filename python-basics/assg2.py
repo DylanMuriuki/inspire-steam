@@ -1,26 +1,35 @@
 #Name:Dylan Muriuki
-#Date:15/02/2026
+#Date:12/02/2026
+#String formatting
 
-#Program for get the square of numbers
+balance="100Kes"
+amount_added="50Kes"
 
-x=int(input("Enter the number:"))
+cleaned_balance=balance.replace("Kes","")
 
-sq_x=x**2
-print(f"The square of {x} is {sq_x}")
+print("Cleaned balance: ",cleaned_balance)
 
+cleaned_amount_added=amount_added.replace("Kes","")
 
-#Program to perform trigonometric functions
+print("Cleaned amount added:",cleaned_amount_added)
 
-import math
+new_balance=int(cleaned_balance)+int(cleaned_amount_added)
 
-for x in range(-180,180,30):
-    print(x)
-    #print(math.sin(x))
-    #print(math.cos(x))
-    #print(math.tan(x))
+print(f"The new balance is:{new_balance}")
+#print("The new balance is:",new_balance)
+#print(f"The new balance is:",new_balance)
 
-    print(f"The cosine of {x} is {math.cos(x)}")
-    print(f"The sine of {x} is {math.sin(x)}")
-    print(f"The tangent of {x} is {math.tan(x)}")
+Qn= "CONFIRMED you have received 40KES from Philip"
+split=Qn.split( )  
+print(f"The amount received is:",split[4] )
 
-    
+clean_balance1=split[4].replace("KES","")
+print(clean_balance1)
+
+new_mpesa_balance=int(clean_balance1)+int(new_balance)
+end=("KES")
+print(new_mpesa_balance)
+print(f"{new_mpesa_balance}{end}")
+
+print(f"CONFIRMED you have received 40KES from Philip.Your new mpesa balance is {new_mpesa_balance}{end} ")
+

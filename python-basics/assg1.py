@@ -1,3 +1,6 @@
+#Name:Dylan Muriuki
+#Date:11/02/2026
+
 university= "JKUAT"
 grade="A minus"
 course="Electrical & electronics engineering"
