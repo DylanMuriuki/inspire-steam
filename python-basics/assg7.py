@@ -1,9 +1,28 @@
-rows = int(input("Enter number of rows: "))
+#Name:Dylan Muriuki
+#Date:17/02/2026
+#Program to solve quadratic equations
 
-# Upper part
-for i in range(rows):
-    print(" " * (rows - i - 1) + "*" * (2 * i + 1))
+import math
 
-# Lower part
-for i in range(rows - 2, -1, -1):
-    print(" " * (rows - i - 1) + "*" * (2 * i + 1))
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+c = float(input("Enter c: "))
+
+#Formula
+# x=-b + or - math.sqrt(b*b-4ac)/2a
+
+#Discriminant
+d = b*b - 4*a*c
+
+if d > 0:
+    x1 = (-b + math.sqrt(d)) / (2*a)
+    x2 = (-b - math.sqrt(d)) / (2*a)
+    print("Two real roots:", x1, "and", x2)
+
+elif d == 0:
+    x = -b / (2*a)
+    print("One real root:", x)
+
+else:
+    print("No real roots")
+
